@@ -3,7 +3,7 @@ import App from './App.vue'
 import AtComponents from 'at-ui'
 import i18next from 'i18next';
 import VueI18Next from '@panter/vue-i18next';
-import enUS from './locales/en.js';
+import enUS from './locales/en.json';
 
 import 'at-ui-style'
 
