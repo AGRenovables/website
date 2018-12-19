@@ -671,6 +671,13 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@panter/vue-i18next@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@panter/vue-i18next/-/vue-i18next-0.13.0.tgz#6c7cc4b527bcfd01bcbc34a3f777b17c4f94cbfc"
+  integrity sha512-SF2lW3w9gA1kSPxW4JCS014PVCJ5OQJdSm5Ls5jgaLYsSP7fjwIAWTMo+ajnEzUv6H7H8jOIehMUruJ9ZwAGIg==
+  dependencies:
+    deepmerge "^2.0.0"
+
 "@types/q@^1.5.1":
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.1.tgz#48fd98c1561fe718b61733daed46ff115b496e18"
@@ -1269,6 +1276,22 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
+
+at-ui-style@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/at-ui-style/-/at-ui-style-1.5.1.tgz#db2057afb3aeb5961d33753cd4ff8bff82e913a0"
+  integrity sha512-5AIPQbj+J062uWG9J1S6COMA1d6AMIONgJFH14wudaf/p6ABLxwhKLbmH2+to+04a+kcL+LQ9erosW4wcrQlrg==
+
+at-ui@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/at-ui/-/at-ui-1.3.3.tgz#20feafa2231fc69268537ed5b3994ca02a072f6d"
+  integrity sha512-y9Ba/mvP3ovyNOhA6afYWHOE11tg3uyCiJaQVkeKWFaInq7BSwBWjhQJhuFF4A+AE+7gkiQTXt26eWQ31FnSWA==
+  dependencies:
+    deepmerge "^2.0.1"
+    vue "^2.5.13"
+    vue-i18n "^7.4.1"
+    vue-router "^2.8.1"
+    vue-template-compiler "^2.5.13"
 
 atob@^2.1.1:
   version "2.1.2"
@@ -2442,6 +2465,11 @@ deepmerge@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
   integrity sha512-95k0GDqvBjZavkuvzx/YqVLv/6YYa17fz6ILMSf7neqQITCPbnfEnQvEgMPNjH4kgobe7+WIL0yJEHku+H3qtQ==
+
+deepmerge@^2.0.0, deepmerge@^2.0.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.2.1.tgz#5d3ff22a01c00f645405a2fbc17d0778a1801170"
+  integrity sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==
 
 default-gateway@^2.6.0:
   version "2.7.2"
@@ -3833,6 +3861,11 @@ https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
+
+i18next@^13.0.0:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-13.0.0.tgz#3d8de7ff3c2cf23cd6d91c4d5861c4756d8a73c6"
+  integrity sha512-P8SDA5PN4bI5/ZdLE2AlanZhU+eXh31icrojQvbGcG7jovoDoz79eKY9mSgQ0LAeuDFKAw4Vl4mGf1/EWGFACg==
 
 iconv-lite@0.4.23:
   version "0.4.23"
@@ -7449,6 +7482,11 @@ vue-hot-reload-api@^2.3.0:
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.1.tgz#b2d3d95402a811602380783ea4f566eb875569a2"
   integrity sha512-AA86yKZ5uOKz87/q1UpngEXhbRkaYg1b7HMMVRobNV1IVKqZe8oLIzo6iMocVwZXnYitlGwf2k4ZRLOZlS8oPQ==
 
+vue-i18n@^7.4.1:
+  version "7.8.1"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-7.8.1.tgz#2ce4b6efde679a1e05ddb5d907bfc1bc218803b2"
+  integrity sha512-BzB+EAPo/iFyFn/GXd/qVdDe67jfk+gmQaWUKD5BANhUclGrFxzRExzW2pYEAbhNm2pg0F12Oo+gL2IMLDcTAw==
+
 vue-loader@^15.4.2:
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-15.4.2.tgz#812bb26e447dd3b84c485eb634190d914ce125e2"
@@ -7460,6 +7498,11 @@ vue-loader@^15.4.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-router@^2.8.1:
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-2.8.1.tgz#9833c9ee57ac83beb0269056fefee71713f20695"
+  integrity sha512-MC4jacHBhTPKtmcfzvaj2N7g6jgJ/Z/eIjZdt+yUaUOM1iKC0OUIlO/xCtz6OZFFTNUJs/1YNro2GN/lE+nOXA==
+
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
@@ -7468,7 +7511,7 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-compiler@^2.5.17:
+vue-template-compiler@^2.5.13, vue-template-compiler@^2.5.17:
   version "2.5.21"
   resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.5.21.tgz#a57ceb903177e8f643560a8d639a0f8db647054a"
   integrity sha512-Vmk5Cv7UcmI99B9nXJEkaK262IQNnHp5rJYo+EwYpe2epTAXqcVyExhV6pk8jTkxQK2vRc8v8KmZBAwdmUZvvw==
@@ -7481,7 +7524,7 @@ vue-template-es2015-compiler@^1.6.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
   integrity sha512-x3LV3wdmmERhVCYy3quqA57NJW7F3i6faas++pJQWtknWT+n7k30F4TVdHvCLn48peTJFRvCpxs3UuFPqgeELg==
 
-vue@^2.5.17:
+vue@^2.5.13, vue@^2.5.17:
   version "2.5.21"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.21.tgz#3d33dcd03bb813912ce894a8303ab553699c4a85"
   integrity sha512-Aejvyyfhn0zjVeLvXd70h4hrE4zZDx1wfZqia6ekkobLmUZ+vNFQer53B4fu0EjWBSiqApxPejzkO1Znt3joxQ==
