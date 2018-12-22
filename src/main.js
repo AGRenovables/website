@@ -12,6 +12,10 @@ import enUS from './locales/en.json';
 import caES from './locales/ca.json';
 import esES from './locales/es.json';
 
+import projects_enUS from './locales/projects/en.json';
+import projects_caES from './locales/projects/ca.json';
+import projects_esES from './locales/projects/es.json';
+
 import App from './App.vue'
 
 
@@ -25,18 +29,24 @@ const router = new Router({
 })
 
 
-const locales = {
-  es: enUS,
+const i18n_common = {
+  en: enUS,
   ca: caES,
-  en: esES
+  es: esES
+};
+
+const i18n_projects = {
+  en: projects_enUS,
+  ca: projects_caES,
+  es: projects_esES
 };
 
 i18next.init({
   lng: 'es',
   resources: {
-    en: { translation: locales.en },
-    es: { translation: locales.es },
-    ca: { translation: locales.ca },
+    en: { common: i18n_common.en, projects: i18n_projects.en },
+    es: { common: i18n_common.es, projects: i18n_projects.es },
+    ca: { common: i18n_common.ca, projects: i18n_projects.ca },
   },
 });
 
@@ -46,5 +56,6 @@ const i18n = new VueI18Next(i18next);
 new Vue({
   router,
   render: h => h(App),
+  i18nOptions: { namespaces: ["common","projects"] },
   i18n: i18n
 }).$mount('#app')

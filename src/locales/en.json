@@ -1,6 +1,6 @@
 {
-    "header_title"          : "Hello!",
-    "header_subtitle"       : "Load bundle language: {{lang}}",
+    "header_title"          : "AGR",
+    "header_subtitle"       : "Assesoria i gestió de renovables",
     "section_1_header"      : "Assesoramos sus proyectos renovables",
     "section_1_text"        : "Nuestra principal actividad es el desarrollo y gestión de las energías renovables. Un recurso limpio a nuestro alcance para poder transicionar a un consumo más respetuoso con el medioambiente.",
     "section_2_header"      : "Transición Energética",
@@ -13,7 +13,7 @@
     "aspect_2_description"  : "Mirando siempre una solución para beneficiar al máximo al cliente.",
     "aspect_3_title"        : "Confianza",
     "aspect_3_description"  : "La base para llevar a cabo cualquier proyecto empieza con al confianza.",
-    "section_4_header"      : "El que fem",
+    "section_4_header"      : "What we do",
     "section_4_p1"          : "Realitzem el cicle complert per la construcció de instal·lacions fotovoltàiques, el seu manteniment i gestió integrals maximitzant el benefici per els nostres clients. Promocionem plantes solars en i la seva execució 'claus en mà'.",
     "section_4_p2"          : "Els nostres orígens es fonamenten en una àmplia experiència en el sector energètic, el coneixement del mon rural i la gestió. Tenim el compromís de contribuïr activament amb el progrés, en la renovació energètica i en el desenvolupament sostenible."
 }

@@ -1,5 +1,5 @@
 <template>
-    <div>AGR
+    <div class="footer">AGR
         <ul>
             <li>1</li>
             <li>2</li>
@@ -15,3 +15,10 @@ export default {
   props: {}
 }
 </script>
+
+<style scoped>
+.footer{
+    background: rgba(26, 191, 107, 0.5);
+    color: white;
+}
+</style>

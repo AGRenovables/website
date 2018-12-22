@@ -1,6 +1,11 @@
 <template>
   <div class="hello">
-    Contact
+    <at-input v-model="inputValue" size="large" placeholder="Large Size"></at-input>
+    <at-input v-model="inputValue" size="large" placeholder="Large Size"></at-input>
+    <at-input v-model="inputValue" size="large" placeholder="Large Size"></at-input>
+    <at-input v-model="inputValue" size="large" placeholder="Large Size"></at-input>
+    <at-textarea v-model="inputValue" placeholder="Please input..."></at-textarea>
+
   </div>
 </template>
 

@@ -1,48 +1,66 @@
 <template>
-  <div class="home">
-    <div class="hero">
-      <h1>{{$t("header_title")}}</h1>
-      <h3>{{$t("header_subtitle", {lang: this.lang})}}</h3>
-    </div>
+  <div>
     <div class="body">
-      <div>
-        <h1>{{$t("section_1_header")}}</h1>
-        <p>{{$t("section_1_text")}}</p>
+      <div class="section-zip">
+        <div>
+          <img src="https://picsum.photos/600/300" alt="section" />
+          <div class="description">
+            <h1>{{$t("section_1_header")}}</h1>
+            <p>{{$t("section_1_text")}}</p>
+          </div>
+        </div>
+        <div>
+          <div class="description">
+            <h1>{{$t("section_4_header")}}</h1>
+            <p>{{$t("section_4_p1")}}</p>
+          </div>
+        </div>
       </div>
       <div>
-        <h1>{{$t("section_2_header")}}</h1>
-        <p>{{$t("section_2_text")}}</p>
+        <div class="quote">
+          <p>{{$t("section_4_p2")}}</p>
+        </div>
       </div>
-      <div>
-        <h1>{{$t("section_3_header")}}</h1>
-        <p>{{$t("section_3_text")}}</p>
+      <div class="triplet">
+        <div>
+          <i class="icon icon-feather"></i>
+          <h1>{{$t("aspect_1_title")}}</h1>
+          <span>{{$t("aspect_1_description")}}</span>
+        </div>
+        <div>
+          <i class="icon icon-zap"></i>
+          <h1>{{$t("aspect_2_title")}}</h1>
+          <span>{{$t("aspect_2_description")}}</span>
+        </div>
+        <div>
+          <i class="icon icon-triangle"></i>
+          <h1>{{$t("aspect_3_title")}}</h1>
+          <span>{{$t("aspect_3_description")}}</span>
+        </div>
+      </div>
+      <div class="section-trident row at-row flex-center flex-middle layout-padding">
+        <div class="col-md-8">
+          <div class="at-box-row bg-c-brand-dark">
+            <div class="description right">
+              <h1>{{$t("section_3_header")}}</h1>
+              <p>{{$t("section_3_text")}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <!-- <i class="icon icon-sun"></i> -->
+          <img src="https://picsum.photos/300" alt="section" />
+        </div>
+        <div class="col-md-8">
+          <div class="at-box-row bg-c-brand-light">
+            <div class="description left">
+              <h1>{{$t("section_2_header")}}</h1>
+              <p>{{$t("section_2_text")}}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="triplet">
-      <div>
-        <i class="icon icon-feather"></i>
-        <h1>{{$t("aspect_1_title")}}</h1>
-        <span>{{$t("aspect_1_description")}}</span>
-      </div>
-      <div>
-        <i class="icon icon-zap"></i>
-        <h1>{{$t("aspect_2_title")}}</h1>
-        <span>{{$t("aspect_2_description")}}</span>
-      </div>
-      <div>
-        <i class="icon icon-triangle"></i>
-        <h1>{{$t("aspect_3_title")}}</h1>
-        <span>{{$t("aspect_3_description")}}</span>
-      </div>
-    </div>
-    <div class="body">
-      <h1>{{$t("section_4_header")}}</h1>
-      <p>{{$t("section_4_p1")}}</p>
-      <p>{{$t("section_4_p2")}}</p>
-
-      <at-alert message="Here is the alert that can be closed." closable></at-alert>
-    </div>
-
   </div>
 </template>
 
@@ -51,11 +69,6 @@ export default {
   name: 'Home',
   props: {
     msg: String
-  },
-  data() {
-    return {
-      lang: 'DE',
-    };
   },
   computed: {
     username () {
@@ -75,9 +88,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.home {
-  text-align: left;
-}
+
 h1 {
   font-size: 2em;
 }
@@ -85,32 +96,59 @@ p {
   font-size: 1.2em;
   line-height: 1.5em;
 }
-.hero {
-  background: rgba(0,0,0,0.2);
-  height: 33vh;
-  background-blend-mode: overlay;
-  background-size: cover;
-  padding: 20px
+
+.body > div { margin: 50px 0; }
+.section-zip img {
+  box-shadow: 0px 5px 12px 1px grey;
 }
-.hero h1 {
-  font-size: 5em;
-  color: white;
-  text-align: left;
+.section-zip > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 60px 0;
 }
-.body{ padding: 10px 20px; }
-.body div { margin: 50px 0; }
+.section-zip  > div .description {
+  max-width: 560px;
+  font-size: 130%;
+  padding: 30px 20px;
+}
+.section-zip > div:nth-of-type(even){
+  background: whitesmoke;
+}
+.section-zip  > div:nth-of-type(even) .description {
+  order: -1;
+}
+.quote {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.quote p {
+  font-style: italic;
+  font-weight: 100;
+  position: relative;
+}
+.quote p::before {
+  content: '\201C';
+  font-size: 69px;
+  position: absolute;
+  line-height: 1em;
+  top: -10px;
+  left: -40px;
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+}
 .triplet {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  padding: 30px 0;
+  padding: 40px 0;
   background: whitesmoke;
 }
 .triplet > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 250px;
+  max-width: 230px;
   text-align: center;
   margin: 0 20px;
 }
@@ -122,5 +160,15 @@ p {
 .triplet > div span {
   font-size: 18px;
   line-height: 17px
+}
+.section-trident .description.left{ text-align: left; }
+.section-trident .description.right{ text-align: right; }
+.section-trident .icon{
+  font-size: 140px;
+  color: #fff81d;
+  text-shadow: 0px 3px 7px rgba(0,0,0,0.2)
+}
+.section-trident img {
+  border-radius: 50%;
 }
 </style>
