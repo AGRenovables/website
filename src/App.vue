@@ -30,10 +30,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.layout-padding {margin: 0 5%;}
+.layout-padding { max-width: 1200px; margin: 0 auto;}
 .title {
   padding: 15px 0;
   margin: 30px 40px;
+  color: initial;
 }
 .title h1 {font-size: 30px;}
 .title p {font-size: 20px;}

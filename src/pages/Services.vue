@@ -28,14 +28,19 @@
     </div>
     <div class="contact-call">
       <h1>No dubti en posar-s'hi en contacte amb nosaltres</h1>
-      <at-button icon="icon-mail">Contactar</at-button>
+      <at-button icon="icon-mail" size="large" @click="goToContact">Contactar</at-button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Services'
+  name: 'Services',
+  methods: {
+    goToContact: function() {
+      this.$router.push('/contact')
+    }
+  }
 }
 </script>
 

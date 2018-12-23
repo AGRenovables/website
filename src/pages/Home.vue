@@ -22,20 +22,22 @@
         </div>
       </div>
       <div class="triplet">
-        <div>
-          <i class="icon icon-feather"></i>
-          <h1>{{$t("aspect_1_title")}}</h1>
-          <span>{{$t("aspect_1_description")}}</span>
-        </div>
-        <div>
-          <i class="icon icon-zap"></i>
-          <h1>{{$t("aspect_2_title")}}</h1>
-          <span>{{$t("aspect_2_description")}}</span>
-        </div>
-        <div>
-          <i class="icon icon-triangle"></i>
-          <h1>{{$t("aspect_3_title")}}</h1>
-          <span>{{$t("aspect_3_description")}}</span>
+        <div class="container">
+          <div>
+            <i class="icon icon-feather"></i>
+            <h1>{{$t("aspect_1_title")}}</h1>
+            <p>{{$t("aspect_1_description")}}</p>
+          </div>
+          <div>
+            <i class="icon icon-zap"></i>
+            <h1>{{$t("aspect_2_title")}}</h1>
+            <p>{{$t("aspect_2_description")}}</p>
+          </div>
+          <div>
+            <i class="icon icon-triangle"></i>
+            <h1>{{$t("aspect_3_title")}}</h1>
+            <p>{{$t("aspect_3_description")}}</p>
+          </div>
         </div>
       </div>
       <div class="section-trident row at-row flex-center flex-middle layout-padding">
@@ -91,26 +93,27 @@ export default {
 
 h1 {
   font-size: 2em;
+  margin-bottom: 16px;
 }
 p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.5em;
 }
 
-.body > div { margin: 50px 0; }
 .section-zip img {
   box-shadow: 0px 5px 12px 1px grey;
 }
 .section-zip > div {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   margin: 60px 0;
 }
 .section-zip  > div .description {
   max-width: 560px;
-  font-size: 130%;
-  padding: 30px 20px;
+  /*font-size: 130%;*/
+  padding: 60px 20px;
+  margin: 0 30px;
 }
 .section-zip > div:nth-of-type(even){
   background: whitesmoke;
@@ -120,7 +123,7 @@ p {
 }
 .quote {
   max-width: 780px;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
 }
 .quote p {
   font-style: italic;
@@ -138,29 +141,34 @@ p {
   font-family: 'Times New Roman', Times, serif;
 }
 .triplet {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
   padding: 40px 0;
   background: whitesmoke;
 }
-.triplet > div {
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 230px;
+  max-width: 280px;
   text-align: center;
   margin: 0 20px;
 }
-.triplet > div i { font-size: 38px; }
-.triplet > div h1 {
+.container > div i { font-size: 38px; }
+.container > div h1 {
   font-size: 20px;
   margin-top: 10px;
 }
-.triplet > div span {
+.container > div span {
   font-size: 18px;
   line-height: 17px
 }
+.section-trident {margin: 80px auto 150px;}
 .section-trident .description.left{ text-align: left; }
 .section-trident .description.right{ text-align: right; }
 .section-trident .icon{

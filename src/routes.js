@@ -6,7 +6,7 @@ import Contact from './pages/Contact.vue'
 
 export default [
     {
-        path: '/home',
+        path: '/',
         name: 'home',
         component: Home
     },

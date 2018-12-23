@@ -1,21 +1,83 @@
 <template>
-  <div class="hello">
-    <at-input v-model="inputValue" size="large" placeholder="Large Size"></at-input>
-    <at-input v-model="inputValue" size="large" placeholder="Large Size"></at-input>
-    <at-input v-model="inputValue" size="large" placeholder="Large Size"></at-input>
-    <at-input v-model="inputValue" size="large" placeholder="Large Size"></at-input>
-    <at-textarea v-model="inputValue" placeholder="Please input..."></at-textarea>
-
+  <div class="layout-padding">
+    <div class="title">
+      <h1>Deixa'ns el seu missatge</h1>
+      <p>Estem encantats d'escoltar la seva proposta.</p>
+    </div>
+    <form id="app" @submit="checkForm">
+      <div class="form">
+        <div class="data">
+          <at-input v-model="name" size="large" placeholder="Nombre"></at-input>
+          <at-input v-model="company" size="large" placeholder="Empresa"></at-input>
+          <at-input v-model="email" size="large" placeholder="Correo"></at-input>
+          <at-input v-model="phone" number size="large" placeholder="Telefono"></at-input>
+        </div>
+        <div class="message">
+          <at-textarea v-model="message" size="large" placeholder="Message" minRows=10 maxRows=12></at-textarea>
+        </div>
+      </div>
+    </form>
+      <div class="send-button">
+        <at-button type="primary" size="large" @click="doSomething">Send</at-button>
+      </div>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
-  name: 'Contact'
+  name: 'Contact',
+  data: function () {
+    return {
+      name: '',
+      company: '',
+      email: '',
+      phone: '',
+      message: ''
+    }
+  },
+  methods: {
+    doSomething: function(event) {
+      let postData = {
+        name: this.name,
+        company: this.company,
+        email: this.email,
+        phone: this.phone,
+        message: this.message
+      }
+      // eslint-disable-next-line
+      console.log("do something",event, this.name);
+      axios.post(`http://agrenovables.com/action`, {
+        body: postData
+      })
+      .then(response => {})
+      .catch(e => {
+        this.errors.push(e)
+      })
+      //window.open('mailto:test@example.com?subject=subject&body=body');
+    }
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+  margin: 0 auto;
+  border-top: 1px solid whitesmoke;
+}
+.form > * {margin: 20px;}
+.data > * {margin: 0 0 16px 0;}
+.data {flex: 1}
+.message {flex: 2}
+.send-button { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
 </style>

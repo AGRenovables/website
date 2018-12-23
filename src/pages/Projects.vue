@@ -26,8 +26,8 @@ export default {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   justify-content: center;
 }
 </style>
