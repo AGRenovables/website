@@ -108,6 +108,7 @@ p {
   align-items: center;
   justify-content: center;
   margin: 60px 0;
+  flex-wrap: wrap;
 }
 .section-zip  > div .description {
   max-width: 560px;
@@ -124,6 +125,7 @@ p {
 .quote {
   max-width: 780px;
   margin: 0 auto 60px auto;
+  padding: 10px 70px;
 }
 .quote p {
   font-style: italic;
@@ -150,6 +152,7 @@ p {
   justify-content: space-around;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 .container > div {
   display: flex;
@@ -157,7 +160,7 @@ p {
   align-items: center;
   max-width: 280px;
   text-align: center;
-  margin: 0 20px;
+  margin: 30px;
 }
 .container > div i { font-size: 38px; }
 .container > div h1 {

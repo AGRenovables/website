@@ -24,12 +24,14 @@ export default {
     padding: 20px;
     transition: background 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.hero.home{
-  background-image: url('./../assets/img/sky.jpg');
+.hero.home{background-image: url('./../assets/img/sky.jpg');}
+.hero.home h1 {
+    text-align: center;
 }
 .hero.projects {
     background-image: url('./../assets/img/solar-panels.jpg');
     background-position: top center;
+    
 }
 .hero.services {
     background-image: url('./../assets/img/business-meeting.jpg');
@@ -50,7 +52,7 @@ export default {
 }
 .hero h3 {
     color: white;
-    font-size: 2.6em;
+    font-size: 1.8em;
     text-shadow: 0 0px 3px black;
 }
 .hero > div {
