@@ -4,6 +4,7 @@ import AtComponents from 'at-ui'
 import 'at-ui-style'
 
 import i18next from 'i18next';
+import LngDetector from 'i18next-browser-languagedetector';
 import VueI18Next from '@panter/vue-i18next';
 
 import routes from './routes';
@@ -41,14 +42,15 @@ const i18n_projects = {
   es: projects_esES
 };
 
-i18next.init({
-  lng: 'es',
-  resources: {
-    en: { common: i18n_common.en, projects: i18n_projects.en },
-    es: { common: i18n_common.es, projects: i18n_projects.es },
-    ca: { common: i18n_common.ca, projects: i18n_projects.ca },
-  },
-});
+i18next
+  .use(LngDetector)
+  .init({
+    resources: {
+      en: { common: i18n_common.en, projects: i18n_projects.en },
+      es: { common: i18n_common.es, projects: i18n_projects.es },
+      ca: { common: i18n_common.ca, projects: i18n_projects.ca },
+    }
+  });
 
 Vue.config.productionTip = false
 

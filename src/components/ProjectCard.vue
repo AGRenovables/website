@@ -15,7 +15,7 @@
                     <span>{{$t('projects_location')}}</span><span>{{$t(info.location)}}</span>
                     <span>{{$t('projects_type')}}</span><span>{{$t(info.type)}}</span>
                     <span>{{$t('projects_power')}}</span><span>{{$t(info.power)}}</span>
-                    <span>{{$t('projects_area')}}</span><span>{{$t(info.area)}}</span>
+                    <span>{{$t('projects_area')}}</span><span>{{$t(info.area)}}<sup>2</sup></span>
                     <span>{{$t('projects_module')}}</span><span>{{$t(info.module)}}</span>
                 </div>
                 <img src="https://picsum.photos/330/200" alt="install" />

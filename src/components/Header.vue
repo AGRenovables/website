@@ -23,11 +23,11 @@
                 </at-menu-item>
             </at-menu>
             <at-dropdown class="language-select" @on-dropdown-command="handleClick" placement="bottom-right">
-                <span><i class="icon icon-globe"></i> <i class="icon icon-chevron-down"></i></span>
+                <span><i class="icon icon-globe"></i><span class="lng-code">{{lang}}</span><i class="icon icon-chevron-down"></i></span>
                 <at-dropdown-menu slot="menu">
-                    <at-dropdown-item name="ca">CAT</at-dropdown-item>
-                    <at-dropdown-item name="es">ES</at-dropdown-item>
-                    <at-dropdown-item name="en">EN</at-dropdown-item>
+                    <at-dropdown-item name="ca">Català</at-dropdown-item>
+                    <at-dropdown-item name="es">Español</at-dropdown-item>
+                    <at-dropdown-item name="en">English</at-dropdown-item>
                 </at-dropdown-menu>
             </at-dropdown>
         </div>
@@ -40,12 +40,18 @@ import i18next from 'i18next';
 
 export default {
   name: 'Header',
-  props: {},
+  data: function () {
+      return {
+          lang : i18next.language
+      }
+  },
   methods: {
-    handleClick: function(lang) {
-    // eslint-disable-next-line
-      console.log("change language to ",lang);
-      i18next.changeLanguage(lang);
+    handleClick: function(lng) {
+        //this.current_lang = lang;
+        // eslint-disable-next-line
+        console.log("change language to ",lng);
+        i18next.changeLanguage(lng);
+        this.lang = i18next.language;
     }
   }
 }
@@ -72,5 +78,10 @@ export default {
 }
 .language-select {
     margin: 0 30px;
+    cursor: pointer;
+}
+.lng-code {
+    text-transform: uppercase;
+    padding: 0 4px;
 }
 </style>

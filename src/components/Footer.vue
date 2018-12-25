@@ -7,9 +7,6 @@
             </div>
             <ul>
                 <li>
-                    <i class="icon icon-phone"></i>655596235
-                </li>
-                <li>
                     <i class="icon icon-mail"></i>info@agrenovables.com
                 </li>
                 <li>

@@ -2,33 +2,33 @@
   <div class="services">
     <div class="layout-padding">
       <div class="title">
-        <h1>Quins serveis oferim</h1>
-        <p>Ens adaptem a les necesitats del client, donant suport en les diferents etapes o operacions que faci falta.</p>
+        <h1>{{$t("service_header")}}</h1>
+        <p>{{$t("service_subheader")}}</p>
       </div>
       <ul>
         <li>
           <i class="icon icon-edit-2"></i>
-          Estudios y Proyectos</li>
+          {{$t("service_list_1")}}</li>
         <li>
           <i class="icon icon-zap"></i>
-          Asesoria energetica</li>
+          {{$t("service_list_2")}}</li>
         <li>
           <i class="icon icon-sun"></i>
-          Promoción de proyectos de Energias Renovables</li>
+          {{$t("service_list_3")}}</li>
         <li>
           <i class="icon icon-feather"></i>
-          Legalización de instalaciones</li>
+          {{$t("service_list_4")}}</li>
         <li>
           <i class="icon icon-sliders"></i>
-          Operación y Mantenimiento de instalaciones (Fotovoltaicas, mini-hidraulicas,...)</li>
+          {{$t("service_list_5")}}</li>
         <li>
           <i class="icon icon-grid"></i>
-          Gestión de Huertas Solares</li>
+          {{$t("service_list_6")}}</li>
       </ul>
     </div>
     <div class="contact-call">
-      <h1>No dubti en posar-s'hi en contacte amb nosaltres</h1>
-      <at-button icon="icon-mail" size="large" @click="goToContact">Contactar</at-button>
+      <h1>{{$t("contact_alt_subtitle")}}</h1>
+      <at-button icon="icon-mail" size="large" @click="goToContact">{{$t("contact_action")}}</at-button>
     </div>
   </div>
 </template>

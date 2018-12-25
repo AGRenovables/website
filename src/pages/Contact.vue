@@ -1,24 +1,24 @@
 <template>
   <div class="layout-padding">
     <div class="title">
-      <h1>Deixa'ns el seu missatge</h1>
-      <p>Estem encantats d'escoltar la seva proposta.</p>
+      <h1>{{$t("contact_header")}}</h1>
+      <p>{{$t("contact_subheader")}}</p>
     </div>
     <form id="app" @submit="checkForm">
       <div class="form">
         <div class="data">
-          <at-input v-model="name" size="large" placeholder="Nombre"></at-input>
-          <at-input v-model="company" size="large" placeholder="Empresa"></at-input>
-          <at-input v-model="email" size="large" placeholder="Correo"></at-input>
-          <at-input v-model="phone" number size="large" placeholder="Telefono"></at-input>
+          <at-input v-model="name" size="large" :placeholder="$t('name')"></at-input>
+          <at-input v-model="company" size="large" :placeholder="$t('company')"></at-input>
+          <at-input v-model="email" size="large" :placeholder="$t('email')"></at-input>
+          <at-input v-model="phone" number size="large" :placeholder="$t('phone')"></at-input>
         </div>
         <div class="message">
-          <at-textarea v-model="message" size="large" placeholder="Message" minRows=10 maxRows=12></at-textarea>
+          <at-textarea v-model="message" size="large" :placeholder="$t('message')" minRows=10 maxRows=12></at-textarea>
         </div>
       </div>
     </form>
       <div class="send-button">
-        <at-button type="primary" size="large" @click="doSomething">Send</at-button>
+        <at-button type="primary" size="large" @click="doSomething">{{$t("send")}}</at-button>
       </div>
   </div>
 </template>
