@@ -78,12 +78,12 @@
     </div>
     <div class="links">
       <p>Enllaços d'interés</p>
-      <img src="https://picsum.photos/200/100" alt="link" />
-      <img src="https://picsum.photos/200/100" alt="link" />
-      <img src="https://picsum.photos/200/100" alt="link" />
-      <img src="https://picsum.photos/200/100" alt="link" />
-      <img src="https://picsum.photos/200/100" alt="link" />
-      <img src="https://picsum.photos/200/100" alt="link" />
+      <img src="./../assets/img/links/appa_n.jpg" alt="link" />
+      <img src="./../assets/img/links/asif_n.jpg" alt="link" />
+      <img src="./../assets/img/links/cne_n.jpg" alt="link" />
+      <img src="./../assets/img/links/eurofes_n.jpg" alt="link" />
+      <img src="./../assets/img/links/icaen_n.jpg" alt="link" />
+      <img src="./../assets/img/links/idae_n.jpg" alt="link" />
     </div>
   </div>
 </template>
@@ -110,8 +110,13 @@ export default {
   border-left: 1px solid whitesmoke;
   padding: 20px 30px;
 }
-.links p {text-align: center;}
-.links img {margin: 10px 0;}
+.links p {text-align: center; margin-bottom: 30px;}
+.links img {
+  margin: 10px 0;
+  height: 100px;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 2px 15px -5px black;
+}
 ul {
   border-top: 1px solid whitesmoke;
   margin: 10px 40px;

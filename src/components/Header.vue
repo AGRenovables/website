@@ -69,7 +69,7 @@ export default {
     display: flex;
     align-items: center;
 }
-.logo img{height: 36px; width: auto;}
+.logo img{height: 28px; width: auto;}
 .filler {flex:1}
 .navigation {
     padding: 0 30px;

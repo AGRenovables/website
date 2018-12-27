@@ -18,7 +18,7 @@
                     <span>{{$t('projects_area')}}</span><span>{{$t(info.area)}}<sup>2</sup></span>
                     <span>{{$t('projects_module')}}</span><span>{{$t(info.module)}}</span>
                 </div>
-                <img src="https://picsum.photos/330/200" alt="install" />
+                <img :src="info.img" alt="install" />
             </div>
         </at-card>
     </div>
@@ -48,6 +48,10 @@ export default {
 .content img {
     margin: 0 auto 15px auto;
     box-shadow: 0px 8px 16px -4px black;
+    max-width: 330px;
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
 }
 .info-details {
     display: grid;

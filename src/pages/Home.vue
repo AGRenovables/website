@@ -3,7 +3,7 @@
     <div class="body">
       <div class="section-zip">
         <div>
-          <img src="https://picsum.photos/600/300" alt="section" />
+          <img src="./../assets/img/parc_solar1.jpg" alt="section" />
           <div class="description">
             <h1>{{$t("section_1_header")}}</h1>
             <p>{{$t("section_1_text")}}</p>
@@ -51,7 +51,7 @@
         </div>
         <div class="col-md-8">
           <!-- <i class="icon icon-sun"></i> -->
-          <img src="https://picsum.photos/300" alt="section" />
+          <img src="./../assets/img/resclosa.jpg" alt="section" />
         </div>
         <div class="col-md-8">
           <div class="at-box-row bg-c-brand-light">
@@ -102,6 +102,10 @@ p {
 
 .section-zip img {
   box-shadow: 0px 5px 12px 1px grey;
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 20% 0%;
 }
 .section-zip > div {
   display: flex;
@@ -181,5 +185,9 @@ p {
 }
 .section-trident img {
   border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  object-position: right center;
 }
 </style>
