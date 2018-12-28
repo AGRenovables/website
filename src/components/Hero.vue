@@ -38,7 +38,8 @@ export default {
     background-position: top center;
 }
 .hero.legal {
-    background-image: url('./../assets/img/legal-background.png');
+    background-image: url('./../assets/img/parc_solar_night.jpg');
+    background-position: 50% 75%;
 }
 .hero.contact {
     background-image: url('./../assets/img/landscape.jpg');

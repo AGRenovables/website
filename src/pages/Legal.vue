@@ -78,12 +78,13 @@
     </div>
     <div class="links">
       <p>Enllaços d'interés</p>
-      <img src="./../assets/img/links/appa_n.jpg" alt="link" />
-      <img src="./../assets/img/links/asif_n.jpg" alt="link" />
-      <img src="./../assets/img/links/cne_n.jpg" alt="link" />
-      <img src="./../assets/img/links/eurofes_n.jpg" alt="link" />
-      <img src="./../assets/img/links/icaen_n.jpg" alt="link" />
-      <img src="./../assets/img/links/idae_n.jpg" alt="link" />
+      <a href="https://www.appa.es/"><img src="./../assets/img/links/appa_n.jpg" alt="link" /></a>
+      <a href="http://www.asif.org/"><img src="./../assets/img/links/asif_n.jpg" alt="link" /></a>
+      <a href="https://www.cnmc.es/ambitos-de-actuacion/energia"><img src="./../assets/img/links/cne_n.jpg" alt="link" /></a>
+      <a href="http://www.eufores.org/"><img src="./../assets/img/links/eurofes_n.jpg" alt="link" /></a>
+      <a href="http://icaen.gencat.cat/ca/inici/"><img src="./../assets/img/links/icaen_n.jpg" alt="link" /></a>
+      <a href="http://www.idae.es/"><img src="./../assets/img/links/idae_n.jpg" alt="link" /></a>
+      <a href="https://www.greenpeace.org/international/"><img src="./../assets/img/links/greenpeace_n.jpg" alt="link" /></a>
     </div>
   </div>
 </template>
