@@ -47,7 +47,7 @@ export default {
 }
 .hero h1 {
     color: white;
-    font-size: 5em;
+    font-size: 400%;
     text-align: left;
     text-shadow: 0px 0px 2px black;
 }

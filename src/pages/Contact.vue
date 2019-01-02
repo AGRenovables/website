@@ -4,7 +4,7 @@
       <h1>{{$t("contact_header")}}</h1>
       <p>{{$t("contact_subheader")}}</p>
     </div>
-    <form id="app" @submit="checkForm">
+    <form id="app" @submit="doSomething">
       <div class="form">
         <div class="data">
           <at-input v-model="name" size="large" :placeholder="$t('name')"></at-input>
@@ -41,17 +41,21 @@ export default {
     doSomething: function(event) {
       let postData = {
         name: this.name,
-        company: this.company,
+        add: 'address',
+        empresa: this.company,
         email: this.email,
-        phone: this.phone,
+        tel: this.phone,
         message: this.message
       }
       // eslint-disable-next-line
       console.log("do something",event, this.name);
-      axios.post(`http://agrenovables.com/action`, {
+      axios.post(`http://agrenovables.com/action.php`, {
         body: postData
       })
-      .then(response => {})
+      .then(response => {
+        // eslint-disable-next-line
+        console.log('response',response);
+      })
       .catch(e => {
         this.errors.push(e)
       })

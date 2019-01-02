@@ -7,6 +7,8 @@ import i18next from 'i18next';
 import LngDetector from 'i18next-browser-languagedetector';
 import VueI18Next from '@panter/vue-i18next';
 
+import VueMq from 'vue-mq';
+
 import routes from './routes';
 
 import enUS from './locales/en.json';
@@ -23,6 +25,13 @@ import App from './App.vue'
 Vue.use(AtComponents)
 Vue.use(VueI18Next)
 Vue.use(Router)
+Vue.use(VueMq, {
+  breakpoints: {
+    sm: 450,
+    md: 1250,
+    lg: Infinity,
+  }
+})
 
 
 const router = new Router({

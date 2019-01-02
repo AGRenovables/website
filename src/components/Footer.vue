@@ -10,7 +10,8 @@
                     <i class="icon icon-mail"></i>info@agrenovables.com
                 </li>
                 <li>
-                    <i class="icon icon-map-pin"></i>Molí de la Coromina, Avià - Berga, Barcelona
+                    <i class="icon icon-map-pin"></i>ASSESSORIA I GESTIÓ DE RENOVABLES S.L.
+CIF B64061914
                 </li>
             </ul>
         </div>
@@ -29,7 +30,7 @@ export default {
 .footer{
     background: rgb(25, 27, 25);
     color: white;
-    padding: 30px 0;
+    padding: 30px 20px;
 }
 li {color: grey;}
 li .icon{margin-right: 10px;}

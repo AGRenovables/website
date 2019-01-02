@@ -102,8 +102,9 @@ p {
 
 .section-zip img {
   box-shadow: 0px 5px 12px 1px grey;
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 300px;
   object-fit: cover;
   object-position: 20% 0%;
 }
@@ -178,6 +179,12 @@ p {
 .section-trident {margin: 80px auto 150px;}
 .section-trident .description.left{ text-align: left; }
 .section-trident .description.right{ text-align: right; }
+@media only screen and (max-width: 480px) {
+  .section-trident {margin: 40px auto}
+  .section-trident .description { margin: 30px 0;}
+  .section-trident .description.left{ text-align: center; }
+  .section-trident .description.right{ text-align: center; }
+}
 .section-trident .icon{
   font-size: 140px;
   color: #fff81d;
