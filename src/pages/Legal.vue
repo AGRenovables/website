@@ -126,4 +126,24 @@ ul {
 li{
   margin: 15px 0;
 }
+@media only screen and (max-width: 760px) {
+  .legal {
+    flex-direction: column;
+  }
+  .links {
+    flex-direction: row;
+    margin: 0 20px;
+    border-left: none;
+    border-top: 1px solid whitesmoke;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .links p {
+    width: 100%;
+  }
+  .links img {
+    margin: 0 4px;
+  }
+}
 </style>

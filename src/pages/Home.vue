@@ -179,7 +179,7 @@ p {
 .section-trident {margin: 80px auto 150px;}
 .section-trident .description.left{ text-align: left; }
 .section-trident .description.right{ text-align: right; }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 760px) {
   .section-trident {margin: 40px auto}
   .section-trident .description { margin: 30px 0;}
   .section-trident .description.left{ text-align: center; }

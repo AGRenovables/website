@@ -5,11 +5,11 @@
                 </router-link>
         </div>
         <span class="filler"></span>
-        <mq-layout mq="sm">
+        <mq-layout mq="md">
             <at-dropdown trigger="click" @on-dropdown-command="handleMenu" placement="bottom-right">
                 <i class="icon icon-menu"></i>
                 <at-dropdown-menu slot="menu">
-                    <at-dropdown-item name="home">{{$t("nav_home")}}</at-dropdown-item>
+                    <!-- <at-dropdown-item name="home">{{$t("nav_home")}}</at-dropdown-item> -->
                     <at-dropdown-item name="projects">{{$t("nav_projects")}}</at-dropdown-item>
                     <at-dropdown-item name="services">{{$t("nav_services")}}</at-dropdown-item>
                     <at-dropdown-item name="legal">{{$t("nav_legal")}}</at-dropdown-item>
@@ -18,11 +18,11 @@
             </at-dropdown>
         </mq-layout>
         <div class="navigation">
-            <mq-layout mq="md+">
+            <mq-layout mq="lg+">
                 <at-menu class="menu" mode="horizontal" :active-name="$route.name">
-                    <at-menu-item name="home" to="/" >
+                    <!-- <at-menu-item name="home" to="/" >
                         <i class="icon icon-home"></i>{{$t("nav_home")}}
-                    </at-menu-item>
+                    </at-menu-item> -->
                     <at-menu-item name="projects" to="/projects">
                         <i class="icon icon-layers"></i>{{$t("nav_projects")}}
                     </at-menu-item>
@@ -62,11 +62,9 @@ export default {
   },
   methods: {
     handleMenu: function(path) {
-        //this.current_lang = lang;
-        // eslint-disable-next-line
         if(path === 'home')
         {
-            path = "\/";
+            path = "/";
         }
         this.$router.push(path)
     },
@@ -88,7 +86,7 @@ export default {
     max-width: 1200px;
     margin: 0 auto;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 760px) {
     .header{
         padding: 10px 10px;
     }
@@ -113,7 +111,7 @@ export default {
     display: flex;
     align-items: center;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 760px) {
     .navigation {
         padding: 0 10px;
     }
@@ -122,7 +120,7 @@ export default {
     margin: 0 30px;
     cursor: pointer;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 760px) {
     .language-select {
         margin: 0;
     }

@@ -84,4 +84,10 @@ export default {
   justify-content: center;
   margin: 30px auto;
 }
+@media screen and (max-width: 760px){
+  .form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
 </style>

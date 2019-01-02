@@ -28,8 +28,9 @@ Vue.use(Router)
 Vue.use(VueMq, {
   breakpoints: {
     sm: 450,
-    md: 1250,
-    lg: Infinity,
+    md: 760,
+    lg: 1250,
+    xl: Infinity,
   }
 })
 

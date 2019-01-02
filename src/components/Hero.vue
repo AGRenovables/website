@@ -29,9 +29,8 @@ export default {
     text-align: center;
 }
 .hero.projects {
-    background-image: url('./../assets/img/solar-panels.jpg');
-    background-position: top center;
-    
+    background-image: url('./../assets/img/planta_fv_raurell.jpg');
+    background-position: 50% 20%;
 }
 .hero.services {
     background-image: url('./../assets/img/business-meeting.jpg');
