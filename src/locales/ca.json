@@ -46,6 +46,7 @@
     "email"                     : "Correo",
     "phone"                     : "Número de contacte",
     "message"                   : "Missatge",
-    "send"                      : "Enviar"
-    
+    "send"                      : "Enviar",
+    "legal_header"              : "Documentació legal",
+    "legal_subheader"           : "Llistat de decrets i reglaments que cumplim en qualsevol projecte realitzat."
 }

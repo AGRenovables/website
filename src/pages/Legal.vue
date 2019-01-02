@@ -2,8 +2,8 @@
   <div class="legal layout-padding">
     <div class="docs">
       <div class="title">
-        <h1>Documentació legal</h1>
-        <p>Llistat de decrets i reglaments que cumplim en qualsevol projecte realitzat.</p>
+        <h1>{{$t("legal_header")}}Documentació legal</h1>
+        <p>{{$t("legal_subheader")}}Llistat de decrets i reglaments que cumplim en qualsevol projecte realitzat.</p>
       </div>
       <ul>
         <li>
