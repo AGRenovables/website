@@ -47,6 +47,8 @@
     "phone"                     : "Número de contacte",
     "message"                   : "Missatge",
     "send"                      : "Enviar",
+    "sent"                      : "S'han enviat les dades correctament",
+    "oops"                      : "Hi ha hagut un imprevist, disculpi les molesties",
     "legal_header"              : "Documentació legal",
     "legal_subheader"           : "Llistat de decrets i reglaments que cumplim en qualsevol projecte realitzat."
 }

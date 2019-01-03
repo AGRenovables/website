@@ -47,6 +47,8 @@
     "phone"                     : "Contact number",
     "message"                   : "Message",
     "send"                      : "Send",
+    "sent"                      : "Your message has been sent",
+    "oops"                      : "Oops, something went wrong.",
     "legal_header"              : "Legal documentation",
     "legal_subheader"           : "Llistat de decrets i reglaments que cumplim en qualsevol projecte realitzat."
 }

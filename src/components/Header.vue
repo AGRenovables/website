@@ -68,7 +68,7 @@ export default {
         }
         this.$router.push(path)
     },
-    handleClick: function(lng) {1
+    handleClick: function(lng) {
         //this.current_lang = lang;
         // eslint-disable-next-line
         console.log("change language to ",lng);
