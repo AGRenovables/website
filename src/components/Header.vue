@@ -42,7 +42,7 @@
                 <at-dropdown-menu slot="menu">
                     <at-dropdown-item name="ca">Català</at-dropdown-item>
                     <at-dropdown-item name="es">Español</at-dropdown-item>
-                    <at-dropdown-item name="en">English</at-dropdown-item>
+                    <!-- <at-dropdown-item name="en">English</at-dropdown-item> -->
                 </at-dropdown-menu>
             </at-dropdown>
         </div>

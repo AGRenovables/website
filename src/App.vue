@@ -25,10 +25,13 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.01em;
 }
 .layout-padding { max-width: 1200px; margin: 0 auto;}
 .title {

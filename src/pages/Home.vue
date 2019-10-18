@@ -41,6 +41,7 @@
         </div>
       </div>
       <div class="section-trident row at-row flex-center flex-middle layout-padding">
+        
         <div class="col-md-8">
           <div class="at-box-row bg-c-brand-dark">
             <div class="description right">
@@ -122,7 +123,9 @@ p {
   margin: 0 30px;
 }
 .section-zip > div:nth-of-type(even){
-  background: whitesmoke;
+  padding: 76px 0;
+  background: #F6F7EF;
+  clip-path: polygon(0 20%, 100% 0, 100% 0, 100% 80%, 0 100%);
 }
 .section-zip  > div:nth-of-type(even) .description {
   order: -1;
@@ -148,8 +151,10 @@ p {
   font-family: 'Times New Roman', Times, serif;
 }
 .triplet {
-  padding: 40px 0;
-  background: whitesmoke;
+  padding: 80px 0 60px;
+  background: #F6F7EF;
+  /* clip-path: polygon(0% 0%, 50% 60px, 100% 0%, 100% 100%, 0% 100%); */
+  clip-path: polygon(0 0, 50% 60px, 100% 0%, 100% 90%, 50% 100%, 0 90%);
 }
 .container {
   display: flex;

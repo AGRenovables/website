@@ -56,7 +56,7 @@ i18next
   .use(LngDetector)
   .init({
     resources: {
-      en: { common: i18n_common.en, projects: i18n_projects.en },
+      // en: { common: i18n_common.en, projects: i18n_projects.en },
       es: { common: i18n_common.es, projects: i18n_projects.es },
       ca: { common: i18n_common.ca, projects: i18n_projects.ca },
     }

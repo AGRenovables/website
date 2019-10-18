@@ -29,7 +29,7 @@ export default {
 <style scoped>
 .footer{
     background: rgb(25, 27, 25);
-    color: white;
+    color: #73B2D9;
     padding: 30px 20px;
 }
 li {color: grey;}
